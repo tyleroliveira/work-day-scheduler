@@ -10,7 +10,8 @@
 var today = moment();
 $("#currentDay").text(today.format("MMM Do, YYYY"));
 
-var time = moment().format("h");
+var time = moment().format("H");
+console.log(time);
 
 if (time > 9) {
 $("#hour-9").addClass("past");
